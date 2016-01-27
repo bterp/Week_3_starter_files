@@ -1,0 +1,46 @@
+#monochrome .chip {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid black;
+  display: inline-block;
+  background: #696; }
+  #monochrome .chip:nth-of-type(2) {
+    background: #e0ebe0; }
+  #monochrome .chip:nth-of-type(3) {
+    background: #3d5c3d; }
+  #monochrome .chip:nth-of-type(4) {
+    background: #4db34d; }
+  #monochrome .chip:nth-of-type(5) {
+    background: #75f075; }
+
+#analogous .chip {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid black;
+  display: inline-block;
+  background: #699; }
+  #analogous .chip:nth-of-type(2) {
+    background: #e0ebeb; }
+  #analogous .chip:nth-of-type(3) {
+    background: #3d5c5c; }
+  #analogous .chip:nth-of-type(4) {
+    background: #4d80b3; }
+  #analogous .chip:nth-of-type(5) {
+    background: #85e0b3; }
+
+#complementary .chip {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid black;
+  display: inline-block;
+  background: #669; }
+  #complementary .chip:nth-of-type(2) {
+    background: #e0e0eb; }
+  #complementary .chip:nth-of-type(3) {
+    background: #3d3d5c; }
+  #complementary .chip:nth-of-type(4) {
+    background: #b3b34d; }
+  #complementary .chip:nth-of-type(5) {
+    background: #e0e085; }
+
+/*# sourceMappingURL=style.css.map */

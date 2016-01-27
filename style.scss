@@ -1,0 +1,86 @@
+//VARIABLES
+
+$color-base: #696;
+$color-background: lighten($color-base, 40);
+$color-dark: darken($color-base, 20);
+$color-accent: saturate($color-base, 20);
+$color-highlight: lighten(saturate($color-base, 60), 20);
+
+$color-a-base: #699;
+$color-a-background: lighten($color-a-base, 40);
+$color-a-dark: darken($color-a-base, 20);
+$color-a-accent: saturate(adjust-color($color-a-base, $hue:30), 20);
+$color-a-highlight: lighten(saturate(adjust-color($color-a-base, $hue:330), 40), 20);
+
+$color-c-base: #669;
+$color-c-background: lighten($color-c-base, 40);
+$color-c-dark: darken($color-c-base, 20);
+$color-c-accent: saturate(adjust-color($color-c-base, $hue:180), 20);
+$color-c-highlight: lighten(saturate(adjust-color($color-c-base, $hue:180), 40), 20);
+
+//MONOCHROME STYLES
+#monochrome {
+    .chip {
+        width: 4rem;
+        height: 4rem;
+        border: 1px solid black;
+        display: inline-block;
+        background: $color-base;
+        &:nth-of-type(2){
+            background: $color-background;
+        }
+        &:nth-of-type(3){
+            background: $color-dark;
+        }
+        &:nth-of-type(4){
+            background: $color-accent;
+        }
+        &:nth-of-type(5){
+            background: $color-highlight;
+        } 
+    }
+}
+//ANALOGOUS STYLES
+#analogous {
+    .chip {
+        width: 4rem;
+        height: 4rem;
+        border: 1px solid black;
+        display: inline-block;
+        background: $color-a-base;
+        &:nth-of-type(2){
+            background: $color-a-background;
+        }
+        &:nth-of-type(3){
+            background: $color-a-dark;
+        }
+        &:nth-of-type(4){
+            background: $color-a-accent;
+        }
+        &:nth-of-type(5){
+            background: $color-a-highlight;
+        } 
+    }
+}
+//COMPLEMENTARY STYLES
+#complementary {
+    .chip {
+        width: 4rem;
+        height: 4rem;
+        border: 1px solid black;
+        display: inline-block;
+        background: $color-c-base;
+        &:nth-of-type(2){
+            background: $color-c-background;
+        }
+        &:nth-of-type(3){
+            background: $color-c-dark;
+        }
+        &:nth-of-type(4){
+            background: $color-c-accent;
+        }
+        &:nth-of-type(5){
+            background: $color-c-highlight;
+        } 
+    }
+}
